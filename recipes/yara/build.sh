@@ -1,8 +1,8 @@
 #!/bin/bash
 set -eu -o pipefail
 
-conda search -c conda-forge conda-build
-conda update -c conda-forge -n root conda-build
+conda search -c defaults conda-build
+conda update -c defaults -n root conda-build
 
 BINARY_HOME=$PREFIX/bin
 PKG_HOME=$PREFIX/opt/$PKG_NAME-$PKG_VERSION
