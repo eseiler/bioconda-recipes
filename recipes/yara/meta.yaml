@@ -12,6 +12,10 @@ package:
   name: yara
   version: {{ version }}
 
+requirements:
+  build:
+    - conda-build =3.*
+
 source:
   url:  http://packages.seqan.de/yara/yara-{{ version }}-Mac-x86_64.zip # [osx]
   sha256: 716230b2f2b147e1d6db7aba017adcf668484436aa7541228776c23b0c5f52a2 # [osx]

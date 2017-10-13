@@ -26,6 +26,6 @@ yara_indexer \
 mkdir -p $PREFIX/bin
 mkdir -p $PKG_HOME
 
-ls $SRC_DIR/$INSTRUCTION/bin
+ls $SRC_DIR/
 
 for i in $binaries; do cp $SRC_DIR/$INSTRUCTION/bin/$i $PKG_HOME/$i && chmod a+x $PKG_HOME/$i && ln -s $PKG_HOME/$i $BINARY_HOME/$i; done
