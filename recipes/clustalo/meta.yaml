@@ -5,22 +5,22 @@ package:
   version: "{{ version }}"
 
 source:
-  url: http://www.clustal.org/omega/clustal-omega-1.2.4.tar.gz
-  md5: 6c0459f4c463a30e942ce7e0efc91422
+  url: http://www.clustal.org/omega/clustal-omega-{{ version }}.tar.gz # [not win]
+  sha265: 8683d2286d663a46412c12a0c789e755e7fd77088fb3bc0342bb71667f05a3ee # [not win]
 
 requirements:
-    build:
-        - gcc
-        - argtable2
+  build:
+    - gcc
+    - argtable2
 
 build:
-    number: 0
+  number: 0
 
 test:
-    commands:
-        - "clustalo --help > /dev/null"
+  commands:
+    - "clustalo --help > /dev/null"
 
 about:
-    home: "http://www.clustal.org/omega/"
-    license: "GPLv2"
-    summary: "Latest version of Clustal: a multiple sequence alignment program for DNA or proteins"
+  home: "http://www.clustal.org/omega/"
+  license: "GPLv2"
+  summary: "Latest version of Clustal: a multiple sequence alignment program for DNA or proteins"
