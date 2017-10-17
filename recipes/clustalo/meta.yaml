@@ -13,6 +13,7 @@ requirements:
     - gcc
     - argtable2
   run:
+    - gcc
     - argtable2
 
 build:
