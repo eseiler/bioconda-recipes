@@ -12,6 +12,8 @@ requirements:
   build:
     - gcc
     - argtable2
+  run:
+    - argtable2
 
 build:
   number: 0
