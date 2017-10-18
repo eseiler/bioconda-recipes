@@ -34,22 +34,6 @@ test:
   # Perl 'use' tests
   commands:
     - perl -e 'use Tk'
-    - perl -e 'use Tk::Adjuster'
-    - perl -e 'use Tk::After'
-    - perl -e 'use Tk::Animation'
-    - perl -e 'use Tk::Balloon'
-    - perl -e 'use Tk::Bitmap'
-    - perl -e 'use Tk::BrowseEntry'
-    - perl -e 'use Tk::Button'
-    - perl -e 'use Tk::Canvas'
-    - perl -e 'use Tk::Checkbutton'
-    - perl -e 'use Tk::Clipboard'
-    - perl -e 'use Tk::CmdLine'
-    - perl -e 'use Tk::ColorDialog'
-    - perl -e 'use Tk::ColorEditor'
-    - perl -e 'use Tk::ColorSelect'
-    - perl -e 'use Tk::Compound'
-    - perl -e 'use Tk::PNG'
 
 about:
   home: http://metacpan.org/pod/Tk
