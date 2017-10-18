@@ -18,6 +18,7 @@ requirements:
   run:
     - 'r-base >=3.2.2'
     - wget
+    - readline
 test:
   commands:
     - '$R -e "library(''JASPAR2016'')"'
