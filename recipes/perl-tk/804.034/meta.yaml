@@ -34,6 +34,8 @@ test:
   # Perl 'use' tests
   commands:
     - perl -e "use Tk"
+    - perl -e "use Tk::Adjuster"
+    - perl -e "use Tk::Adjuster:Item"
 
 about:
   home: http://metacpan.org/pod/Tk
