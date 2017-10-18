@@ -33,7 +33,7 @@ requirements:
 test:
   # Perl 'use' tests
   commands:
-    - perl -e "use base"
+    - perl -e "use Tk"
 
 about:
   home: http://metacpan.org/pod/Tk
