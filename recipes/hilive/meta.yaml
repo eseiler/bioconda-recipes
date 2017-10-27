@@ -1,0 +1,41 @@
+{% set version = "1.0" %}
+{% set hash = "c86ac06f282b2f0de02977076c3de6b0d6a12d63f942fe20ba59b475a04916cc" %}
+
+package:
+  name: hilive
+  version: {{ version }}
+
+source:
+  url: https://gitlab.com/SimonHTausch/HiLive/repository/v{{ version }}/archive.tar.gz
+  sha256: {{ hash }}
+
+requirements:
+  build:
+    - gcc # [linux]
+    - llvm # [osx]
+    - cmake >=2.8
+    - zlib {{ CONDA_ZLIB }}*
+    - bzip2 {{ CONDA_BZIP2 }}*
+    - boost {{ CONDA_BOOST }}*
+    - lz4
+    - seqan-library
+  run:
+    - libgcc # [linux]
+    - zlib {{ CONDA_ZLIB }}*
+    - bzip2 {{ CONDA_BZIP2 }}*
+    - boost {{ CONDA_BOOST }}*
+    - lz4
+    - seqan-library
+
+build:
+    number: 0
+
+test:
+    commands:
+        - hilive --help > /dev/null
+
+about:
+    home: https://gitlab.com/SimonHTausch/HiLive
+    license: Custom
+    license_file: LICENSE
+    summary: "HiLive is a read mapping tool that maps Illumina HiSeq (or comparable) reads right in the moment when they are produced. This means, read mapping is finished as soon as the sequencer is finished."
